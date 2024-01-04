@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Digest</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    
+    <!-- navbar -->
+    <div class='sticky'>
+        <nav class='navbar'>
+            <ul class='main_nav'>
+                <Link class='Brand'>News Digest</Link>
+                <ul class='cat_lap'>
+                    <li class='categories' id="general" onclick="handleCategory('general')">Home</li>
+                    <li class='categories' id="business" onclick="handleCategory('business')">Business</li>
+                    <li class='categories' id="entertainment" onclick="handleCategory('entertainment')">Entertainment</li>
+                    <li class='categories' id="health" onclick="handleCategory('health')">Health</li>
+                    <li class='categories' id="science" onclick="handleCategory('science')">Science</li>
+                    <li class='categories' id="sports" onclick="handleCategory('sports')">Sports</li>
+                </ul>
+                <div class="dropdown">
+                    <button onClick="myFunction()" className="dropbtn">categories</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <li class='categories' to="/">Home</li>
+                        <li class='categories' onClick="handleCategoryMob()" to="/business">Business</li>
+                        <li class='categories' onClick="handleCategoryMob('entertainment')" to="/entertainment">Entertainment
+                        </li>
+                        <li class='categories' onClick="handleCategoryMob('health')" to="/health">Health</li>
+                        <li class='categories' onClick="handleCategoryMob('science')" to="/science">Science</li>
+                        <li class='categories' onClick="handleCategoryMob('sports')" to="/sports">Sports</li>
+                        <li class='categories' onClick="handleCategoryMob('technology')" to="/technology">Technology</li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- main news -->
+    <main>
+        <div class='news-page' id="news-page">
+            
+        </div>
+    </main>
+
+    <template id="news-template">
+        <div class='card'>
+            <img src="newsimg.jpg"  alt="" class="image" />
+            <div class='card-details'>
+              <h4 class='title'>Lorem ipsum dolor sit amet consectetur adipisicing elit....</h4>
+              <p class='description'> Lorem ipsum dolor sit, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni inventore velit assumenda sapiente laborum recusandae!amet consectetur adipisicing elit. Ipsam accusantium ab saepe. Doloremque accusantium sunt, explicabo itaque iusto voluptate rem?....</p>
+              <a href='#' target='blank' class='btn url'>Read More</a>
+              <p class='authordetail'>BY-dkfrk djndnc dkcnd </p> 
+            </div>
+        </div>
+    </template>
+    
+
+    <!-- Footer -->
+    <footer>
+        <h3 class="footer-title">NEWS DIGEST</h3>
+        <p>Copyright © 2024 News Digest, Inc.</p>
+       
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

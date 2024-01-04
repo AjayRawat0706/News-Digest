@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    padding: 0;
+  }
+  main{
+    margin-top: 80px;
+  }
+  .card{
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 406px;
+    height: 530px;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    background-color: rgb(214, 194, 197);
+  }
+  img{
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+  }
+  .card-details{
+    margin: 0;
+    padding: 20px;
+  
+  }
+  .cat_lap{
+    display: flex;
+  }
+  .btn{
+    margin: 0;
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    background-color:#212529;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 10px;
+  
+  }
+  .title{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .news-page{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .news-page-heading{
+    text-align: center;
+    font-size: 45px;
+    margin-top: 80px;
+    margin-bottom: 5px;
+  }
+  
+  .navbar{
+    margin: 0;
+    background-color: #212529;
+    color: gray;
+  }
+  .navbar .main_nav{
+    position: relative;
+    display: flex;
+    list-style: none;
+    height: 60px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  li{
+     list-style: none;
+  }
+  .categories{
+    margin-left: 20px;
+    padding: 0;
+    color: inherit;
+    text-decoration: inherit;
+  }
+  .Brand{
+    font-size: 20px;
+    font-weight: 800;
+    color: inherit;
+    text-decoration: inherit;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+    .dropbtn {
+      background-color: gray;
+      color: white;
+      padding: 8px;
+      border-radius: 4px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    
+    .dropdown {
+      position: absolute;
+      right: 30px;
+      display: none;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content .categories {
+      margin: 0px;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown a:hover {background-color: #ddd;}
+    
+    .show {display: block;}
+  
+    @media screen and (max-width: 680px) {
+      .dropdown {
+        display: inline-block;
+      }
+      .cat_lap{
+        display: none;
+      }
+    }
+
+    /* footer */
+
+    footer{
+        /* position: fixed; */
+        bottom: 0;
+        /* width: 100%; */
+        background-color: #212529;
+        color: white;
+        text-align: center;
+        padding: 15px ; 
+        font-size: 1.7em;
+    }
+    
+    footer p{
+        font-size: 1em;
+        color: gray;
+    }
+   
+
